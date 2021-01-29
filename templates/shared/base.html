@@ -1,0 +1,154 @@
+
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Customize CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% block css %}
+      
+    {% endblock css %}
+
+    <title>
+        {% block title %}
+          
+        {% endblock title %}
+    </title>
+  </head>
+  <body>
+  
+    <section class="bodysec">
+        <header>
+            <nav>
+                <div class="topheader">
+                    <a href="{% url 'index' %}"><img src="{% static 'images/headerimglogo.png' %}" alt="imglogo"></a>
+                    <img style="padding-left: 110px;" src="{% static 'images/headerimglogo2.png' %}" alt="imgtext">
+                </div>
+                <div class="downheader">
+                    <ul class="downheaderul">
+                        <li class="active"><i class="fa fa-address-card"></i><a href="#"> About Us </a>
+                            <div class="submenu1">
+                                <ul>
+                                    <li><a href="{% url 'visionandmission' %}">Mission</a></li>
+                                    <li><a href="{% url 'visionandmission' %}">Vision</a></li>
+                                    <li><a href="{% url 'visionandmission' %}">History</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><i class="fa fa-graduation-cap"></i><a href="#">Admission </a>
+                            <div class="submenu1">
+                                <ul>
+                                    <li><a href="#">Preparatory</a></li>
+                                    <li><a href="#">Primary</a></li>
+                                    <li><a href="#">Secondary</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><i class="fa fa-university"></i><a href="#">Academics </a>
+                            <div class="submenu1">
+                                <ul>
+                                    <li><a href="#">Arithmetics</a></li>
+                                    <li class="hoverme"><a href="#">Languages</a> <i class="fa fa-angle-right"></i>
+                                        <div class="submenu2">
+                                            <ul>
+                                                <li><a href="#">English</a></li>
+                                                <li><a href="#">French</a></li>
+                                                <li><a href="#">Arabic</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Entrepreneurship</a></li>
+                                    <li><a href="#">Religion</a></li>
+                                    <li><a href="#">Trading</a></li>
+                                    <li class="hoverme"><a href="#">Agriculture</a><i class="fa fa-angle-right"></i>
+                                        <div class="submenu2">
+                                            <ul>
+                                                <li><a href="#">Sericulture</a></li>
+                                                <li><a href="#">Apiculture</a></li>
+                                                <li><a href="#">Curniculture</a></li>
+                                                <li><a href="#">Pomology</a></li>
+                                                <li><a href="#">Ornamentology</a></li>
+                                                <li><a href="#">Horticulture</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><i class="fa fa-list-alt"></i><a href="#">Administration </a>
+                            <div class="submenu1">
+                                <ul>
+                                    <li><a href="#">The Principal</a></li>
+                                    <li><a href="#">The Head Teacher</a></li>
+                                    <li><a href="#">The Visitor</a></li>
+                                    <li><a href="#">The Bursary</a></li>
+                                    <li><a href="#">The Clerk</a></li>
+                                    <li><a href="#">Cheif Security</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><i class="fa fa-picture-o"></i><a href="#">Gallery </a></li>
+                        <li><i class="fa fa-archive"></i><a href="#">Library </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    
+        <main>
+            {% block main %}
+              
+            {% endblock main %}
+        </main>
+    
+        <footer>
+            <div class="straightline"></div>
+            <div class="fdiv" style="text-align: center;">
+                <h6>Downloads</h6>
+                <div class="verticallines"></div>
+                <h6>Contact Us</h6>
+                <div class="verticallines"></div>
+                <h6>Join Support Team</h6>
+                <div class="verticallines"></div>
+                <h6>Icons</h6>
+                <div class="verticallines"></div>
+                <h6>Collaborators</h6>
+                <div class="verticallines"></div>
+                <h6>Administration</h6>
+            </div>
+            <section class="fsec1">
+                <div class="fsec1div1">
+                    <img width="100px" height="100px" src="{% static 'images/headerimglogo.png' %}" alt="imglogo">
+                    <h4>DAARUS-SALAAM COLLEGE</h4>
+                    <h6>Daarus-salaam college, ChallengII area, Saki, Oyo-state</h6>
+                </div>
+                <div class="fsec1div2">
+                        <a href="#"><i class="fa fa-facebook-square socialicons" ></i></a>
+                        <a href="#"><i class="fa fa-twitter-square socialicons" ></i></a>
+                        <a href="#"><i class="fa fa-whatsapp socialicons" ></i></a>
+                        <a href="#"><i class="fa fa-phone-square socialicons" ></i></a>
+                </div>
+            </section>
+            <section class="fsec2">
+                <p>© Daarus-salaam Model College, 2020</p>
+                <p style="justify-self: end;">Powered by Jelmah Tech.</p>
+            </section>
+        </footer>
+    
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

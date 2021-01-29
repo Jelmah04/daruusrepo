@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: skyblue;
+}
+.bodysec{
+    width: 80%;
+    margin: 30px auto;
+    opacity: .8;
+    background-color: lavender;
+    font-family: sans-serif;
+}
+.downheader{
+    text-align: center;
+    background: purple;
+}
+.downheader ul{
+    display: inline-flex;
+    list-style-type: none;
+    color: #fff;
+}
+.downheader ul li{
+    margin: 10px;
+    padding: 10px;
+    width: 150px;
+}
+.downheader ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.active, .downheader ul li:hover{
+    background: plum;
+    border-radius: 3px;
+}
+.downheader .fa{
+    margin-right: 8px;
+}
+.submenu1 {
+    display: none;
+}
+.downheader ul li:hover .submenu1{
+    display: block;
+    position: absolute;
+    background: purple;
+    margin: 15px 0px 0px 15px;
+}
+.downheader ul li:hover .submenu1 ul{
+    display: block;
+    margin: 10px;
+}
+.downheader ul li:hover .submenu1 ul li{
+    border-bottom: 1px dotted #fff;
+    text-align: left;
+    width: 150px;
+    background: transparent;
+}
+.downheader ul li:hover .submenu1 ul li:last-child{
+    border-bottom: none;
+}
+.downheader ul li:hover .submenu1 ul li a:hover{
+    color: rgb(250, 132, 250);
+}
+.fa-angle-right{
+    float: right;
+}
+.submenu2{
+    display: none;
+}
+.hoverme:hover .submenu2{
+    display: block;
+    position: absolute;
+    background: purple;
+    margin: -40px 0px 0px 160px;
+}
+
+
+
+
+/* footer */
+.straightline{
+    height: 2px;
+    background: #fff;
+    width: 95%;
+    margin: 55px auto;
+    border-radius: 20%;
+}
+.verticallines{
+    height: 25px;
+    background: #000;
+    width: 2px;
+    border-radius: 20%;
+    margin: 0 40px;
+}
+.fdiv{
+    display: inline-flex;
+    padding-left: 60px;
+}
+.fsec1div1{
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    text-align: center;
+    color: purple;
+}
+.fsec1{
+    width: 90%;
+    margin: 40px auto 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.socialicons{
+    padding: 0px 10px;
+    float: right;
+    font-size: 35px;
+    font-weight: bolder;
+    margin: 0 5px;
+    color: purple;
+}
+.fsec2{
+    width: 90%;
+    margin: 30px auto 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+
+
+
